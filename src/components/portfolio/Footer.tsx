@@ -4,10 +4,10 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: Github, href: "https://github.com/dhruv-dave", label: "GitHub" },
-    { icon: Linkedin, href: "https://linkedin.com/in/dhruv-dave", label: "LinkedIn" },
-    { icon: Twitter, href: "https://twitter.com/dhruv_dave", label: "Twitter" },
-    { icon: Mail, href: "mailto:dhruv@example.com", label: "Email" },
+    { icon: Github, href: "https://github.com/dino9925", label: "GitHub" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/dhruv-dave-2b1990217/", label: "LinkedIn" },
+    // { icon: Twitter, href: "https://twitter.com/dhruv_dave", label: "Twitter" },
+    { icon: Mail, href: "mailto:dhruvdave2112@gmail.com", label: "Email" },
   ];
 
   const navLinks = [

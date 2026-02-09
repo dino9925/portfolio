@@ -19,12 +19,14 @@ const About = () => {
               <div className="absolute inset-0 border border-electric-blue/20 rounded-full animate-pulse" />
               <div className="absolute inset-4 border border-mint-green/20 rounded-full animate-pulse" style={{ animationDelay: '0.5s' }} />
               <div className="absolute inset-8 border border-soft-purple/20 rounded-full animate-pulse" style={{ animationDelay: '1s' }} />
-              
+
               {/* Center content */}
-              <div className="absolute inset-16 bg-gradient-to-br from-deep-indigo to-background rounded-full flex items-center justify-center border border-electric-blue/30">
-                <div className="text-center">
-                  <span className="text-6xl font-display font-bold gradient-text">DD</span>
-                </div>
+              <div className="absolute inset-10 bg-gradient-to-br from-deep-indigo to-background rounded-full flex items-center justify-center border border-electric-blue/30 overflow-hidden">
+                <img
+                  src="/profilepic.jpeg"
+                  alt="Dhruv Dave"
+                  className="w-full h-full object-cover opacity-90 hover:opacity-100 transition-opacity duration-300"
+                />
               </div>
 
               {/* Floating elements */}
@@ -55,7 +57,7 @@ const About = () => {
               Hi, I'm Dhruv — <br />
               <span className="gradient-text">Software Engineer</span> focused on AI, ML & Automation.
             </h2>
-            
+
             <div className="space-y-4 text-muted-foreground text-lg leading-relaxed">
               <p>
                 I specialize in building intelligent, production-ready solutions across machine learning, workflow automation, CI/CD pipelines, analytics platforms, and data-driven systems.

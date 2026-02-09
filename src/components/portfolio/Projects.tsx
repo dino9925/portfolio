@@ -12,6 +12,14 @@ const Projects = () => {
       gradient: "from-electric-blue to-soft-purple",
     },
     {
+      icon: Workflow,
+      title: "Clinical Study Report (CSR) Generation Backend",
+      tagline: "Automated DAG-based CSR generation system.",
+      description: "Designed and built a DAG-based CSR generation backend using Python and FastAPI, converting YAML mappings and Word templates into regulatory-ready Clinical Study Reports. Implemented asynchronous task orchestration with Celery, input validation, and audit logging, storing generated documents in MinIO with PostgreSQL metadata.",
+      tech: ["Python", "FastAPI", "Celery", "PostgreSQL", "MinIO"],
+      gradient: "from-mint-green to-electric-blue",
+    },
+    {
       icon: Mail,
       title: "Web2Mail Automation",
       tagline: "Fully automated lead extraction + email outreach engine.",
@@ -54,7 +62,7 @@ const Projects = () => {
             Featured Work
           </span>
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-            Projects & <span className="gradient-text">Case Studies</span>
+            <span className="gradient-text">Projects</span>
           </h2>
           <p className="text-muted-foreground text-lg">
             Real-world solutions combining AI, automation, and engineering excellence
@@ -71,7 +79,7 @@ const Projects = () => {
             >
               {/* Top gradient bar */}
               <div className={`h-1 bg-gradient-to-r ${project.gradient}`} />
-              
+
               <div className="p-6">
                 {/* Icon */}
                 <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${project.gradient} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
@@ -104,7 +112,7 @@ const Projects = () => {
                 </div>
 
                 {/* Actions */}
-                <div className="flex gap-3 pt-2">
+                {/* <div className="flex gap-3 pt-2">
                   <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-electric-blue">
                     <Github className="w-4 h-4 mr-1" />
                     Code
@@ -113,7 +121,7 @@ const Projects = () => {
                     <ExternalLink className="w-4 h-4 mr-1" />
                     Demo
                   </Button>
-                </div>
+                </div> */}
               </div>
             </div>
           ))}

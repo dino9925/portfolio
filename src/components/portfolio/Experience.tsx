@@ -7,10 +7,10 @@ const Experience = () => {
       company: "Webosphere",
       period: "Sep 2025 – Present",
       achievements: [
+        "Clinical Study Report generation system",
+        "Rag System for internal documents",
         "Built a CI/CD pipeline using Jenkins for automated Docker deployments",
         "Integrated and customized OnlyOffice for real-time document editing",
-        "Implemented centralized logging with critical alert routing",
-        "Developed auto-recovery systems for consistent service uptime",
       ],
       current: true,
     },
@@ -68,16 +68,14 @@ const Experience = () => {
             {experiences.map((exp, index) => (
               <div
                 key={exp.title}
-                className={`relative mb-12 last:mb-0 ${
-                  index % 2 === 0 ? "md:pr-[50%] md:text-right" : "md:pl-[50%] md:ml-0"
-                }`}
+                className={`relative mb-12 last:mb-0 ${index % 2 === 0 ? "md:pr-[50%] md:text-right" : "md:pl-[50%] md:ml-0"
+                  }`}
               >
                 {/* Timeline dot */}
-                <div className={`absolute left-0 md:left-1/2 w-4 h-4 rounded-full border-2 ${
-                  exp.current 
-                    ? "bg-mint-green border-mint-green animate-pulse" 
+                <div className={`absolute left-0 md:left-1/2 w-4 h-4 rounded-full border-2 ${exp.current
+                    ? "bg-mint-green border-mint-green animate-pulse"
                     : "bg-deep-indigo border-electric-blue"
-                } md:-translate-x-1/2 top-6`} />
+                  } md:-translate-x-1/2 top-6`} />
 
                 {/* Content card */}
                 <div className={`ml-8 md:ml-0 ${index % 2 === 0 ? "md:mr-8" : "md:ml-8"}`}>
@@ -94,9 +92,8 @@ const Experience = () => {
                     <h3 className="font-display text-xl font-semibold text-foreground mb-1">
                       {exp.title}
                     </h3>
-                    <div className={`flex flex-wrap items-center gap-4 text-sm text-muted-foreground mb-4 ${
-                      index % 2 === 0 ? "md:justify-end" : ""
-                    }`}>
+                    <div className={`flex flex-wrap items-center gap-4 text-sm text-muted-foreground mb-4 ${index % 2 === 0 ? "md:justify-end" : ""
+                      }`}>
                       <span className="flex items-center gap-1">
                         <Briefcase className="w-4 h-4 text-electric-blue" />
                         {exp.company}
@@ -112,9 +109,8 @@ const Experience = () => {
                       {exp.achievements.map((achievement, i) => (
                         <li
                           key={i}
-                          className={`text-muted-foreground text-sm flex items-start gap-2 ${
-                            index % 2 === 0 ? "md:flex-row-reverse" : ""
-                          }`}
+                          className={`text-muted-foreground text-sm flex items-start gap-2 ${index % 2 === 0 ? "md:flex-row-reverse" : ""
+                            }`}
                         >
                           <span className="w-1.5 h-1.5 rounded-full bg-electric-blue mt-2 shrink-0" />
                           {achievement}
