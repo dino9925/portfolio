@@ -3,29 +3,31 @@ import { Brain, Settings, Database, Globe, Workflow, Users } from "lucide-react"
 const Skills = () => {
   const skillCategories = [
     {
+      icon: Globe,
+      title: "Web & Backend",
+      skills: ["Python", "FastAPI", "Celery", "PostgreSQL", "MinIO"],
+      gradient: "from-electric-blue to-mint-green",
+    },
+    {
+      icon: Settings,
+      title: "Automation & DevOps",
+      skills: ["CI/CD (Jenkins)", "Docker", "GitHub", "Logging Systems"],
+      gradient: "from-mint-green to-electric-blue",
+    },
+    {
       icon: Brain,
       title: "AI / ML",
       skills: ["Regression", "Classification", "Clustering", "EDA", "TensorFlow", "scikit-learn", "OpenCV"],
       gradient: "from-electric-blue to-soft-purple",
     },
-    {
-      icon: Settings,
-      title: "Automation & DevOps",
-      skills: ["CI/CD (Jenkins)", "Docker", "AWS EC2", "Logging Systems", "Auto-recovery pipelines"],
-      gradient: "from-mint-green to-electric-blue",
-    },
+
     {
       icon: Database,
       title: "Data Engineering & Analytics",
-      skills: ["Pandas", "NumPy", "Streamlit", "Power BI", "Matplotlib", "Seaborn"],
+      skills: ["Pandas", "NumPy", "Streamlit", "Plotly", "Power BI", "Matplotlib"],
       gradient: "from-soft-purple to-mint-green",
     },
-    {
-      icon: Globe,
-      title: "Web & Backend",
-      skills: ["Python", "Django", "APIs", "OnlyOffice integration"],
-      gradient: "from-electric-blue to-mint-green",
-    },
+
     {
       icon: Workflow,
       title: "Automation Tools",
@@ -44,7 +46,7 @@ const Skills = () => {
     <section id="skills" className="section-padding bg-deep-indigo/30 relative">
       {/* Background decoration */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(58,109,255,0.1),transparent_50%)]" />
-      
+
       <div className="container-custom relative z-10">
         {/* Section header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
@@ -69,7 +71,7 @@ const Skills = () => {
             >
               {/* Gradient glow on hover */}
               <div className={`absolute inset-0 bg-gradient-to-br ${category.gradient} opacity-0 group-hover:opacity-5 rounded-xl transition-opacity duration-300`} />
-              
+
               <div className="relative z-10">
                 {/* Icon and title */}
                 <div className="flex items-center gap-3 mb-4">

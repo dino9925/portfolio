@@ -32,7 +32,7 @@ const Contact = () => {
               </a>
             </Button>
             <Button variant="hero-outline" size="lg" asChild>
-              <a href="https://linkedin.com/in/dhruv-dave" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/dhruv-dave-2b1990217/" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="w-5 h-5" />
                 LinkedIn
               </a>
